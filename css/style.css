@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ede0d4;
+    
+}
+#navbar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    background-color: #b35c44;
+    z-index: +5;
+
+}
+#leftnav{
+    float: left;
+    margin-left: 10px;
+}
+.clr{
+    clear: both;
+}
+#rightnav{
+    float: right;
+    margin-right: 10px;
+     cursor: pointer;
+}
+nav ul{
+    padding: 0;
+    list-style: none;
+    background-color: #b35c44;
+    margin-top: 0;
+}
+nav ul>li{
+    display: inline-block;
+    font-size: 25px;
+}
+nav> ul> li> a{
+    text-decoration: underline;
+    color: #faf9f6;
+    display: block;
+    padding: 10px 20px;  
+    transition: color 0.3s;
+}
+nav a:hover{
+    color: #f4a261;
+}
+#main1{
+    margin-top: 5%;
+    text-align: center;
+}
+.intro>p{
+    margin: auto;
+    width: 80%;
+    font-size: 20px;
+    text-indent: 20px;
+}
+.featured-cities{
+    display: grid;
+    margin-top: 10px;
+    gap: 2rem;
+
+}
+ h1{
+    text-align: center;
+    font-size: 30px;
+    color: #b35c44;
+}
+
+#bamyan{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/bamiyan-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+#bamyan> h1{
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 0 #faf9f6;
+    color: #2e2e2e;
+   
+}
+.city1>p{
+     margin: auto;
+    width: 80%;
+    font-size: 20px;
+    text-indent: 20px;
+}
+.slider{
+    margin-top: 50px;
+    width: 80%;
+    height: 600px;
+    background-image: url(../img/band-e-amir_6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: slider 20s linear  infinite ;
+    margin-left: 150px;
+}
+@keyframes slider{
+    0%{
+        background-image: url(../img/hazara\ woman.jpg);
+        background-size: 100% 100%;
+    }
+    50%{
+         background-image: url(../img/info\ about\ bamyan.jpg);
+        background-size: 100% 100%;
+    }
+}
+
+
+.footer{
+    width: 100%;
+    padding-top: 3%;
+    overflow: auto;
+    background-color: #b35c44;
+    color: #284b63;
+    display: flex;
+    gap: 40px;
+}
+
+
+
+.rightfooter{
+    float: right;
+    text-align: center;
+    margin-right: 50px;
+}
+#leftfooter{
+    width: 50%;
+    margin-left: 100px;
+    margin-bottom: 10px;
+   
+}
+.form{
+    width: 10%;
+    float: left;
+}
+input[type=text], textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    border: solid 2px #284b63 ;
+}
+textarea::placeholder, input::placeholder{
+    color: #284b63;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.rightfooter> h1{
+    color: #284b63;
+}
+#leftfooter> h1{
+    color: #284b63;
+}
+.send{
+    float: right;
+    width: 100px;
+    height: 40px;
+    color: #faf9f6;
+    margin-right: 140px;
+    background-color: #284b63;
+} 
+.send:hover{
+    box-shadow: 0 5px 5px rgba(98, 50, 242, 0.494);
+    cursor: pointer;
+}
+textarea{
+    resize: none;
+}
+.type{
+    width: 70%;
+    float: left;
+}
+.sub1{
+    clear: both;
+}
+.lable{
+    padding: 10px 0;
+    margin: 10px 0;
+    display: block;
+}
+.footer> .rightfooter>ul, .footer>.rightfooter>ul>li>a>i{
+    list-style: none;
+    font-size: 30px;
+    color: #284b63;
+}
+.rightfooter>ul>li{
+    float: left;
+    margin-right: 10px;
+}
+.rightfooter>ul>li>a>i:hover{
+    color: #faf9f6;
+}
+.submit{
+    background-color: #f4a261;
+    float: right;
+    margin-right: 20%;
+    color: #faf9f6;
+    width: 10%;
+    height: 40px;
+}
+.submit:hover{
+     box-shadow: 0 5px 5px rgba(242, 168, 65, 0.54);
+    cursor: pointer;
+    background-color: #faf9f6;
+    color: #b35c44;
+}
+#submit{
+    width: 70%;
+    margin-bottom: 10%;
+    margin-left: 250px;
+}
+.lab{
+    color: #f4a261;
+    padding: 10px 0;
+    margin: 10px 0;
+    display: block;
+}
+.i{
+   float: left;
+    width: 20%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.i>img{
+    width: 100%;
+    display: block;
+    height: 150px;
+    margin-right: 20px;
+}
+.p>p{
+    width: 100%;
+    display: block;
+}
+.p{
+    width: 70%;
+    display: inline-block;
+    text-align: justify;
+    box-sizing: border-box;
+    padding: 10px;
+}    
+.facts{
+    transition: transform 5s;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.facts:hover{
+    transform: scale(0.8);
+}
+.factsection{
+    margin: 130px 50px;
+}
+.gallery{
+     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 30px;
+     margin-right: 200px ;
+    margin-left: 200px;
+   
+}
+
+.gallery-section{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+.gallery-section img{
+    width: 100%;
+   display: block;
+   transition: transform 0.3s ease;
+   height: 300px;
+
+}
+.afghan-cities{
+   position: absolute;
+   bottom: 0;
+   background: rgba(0, 0, 0, 0.6);
+   color: #faf9f6;
+   width: 100%;
+   padding: 15px;
+   opacity: 0;
+   transition: opacity 0.5s ease;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.gallery-section:hover img{
+    transform: scale(1.05);
+}
+.gallery-section:hover .afghan-cities{
+    opacity: 1;
+}
+
+.afghan-cities p{
+    margin: 0 10px 15px;
+    color: #faf9f6;
+    font-size: 0.9em;
+}
+.afghan-cities h3{
+    color: #b35c44;
+    font-size: 1.2rem;
+
+}
+.featured-cities{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #fefaf3;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.city-card{
+    position: relative;
+    background-color: #faf9f6;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transport 0.4s ease, box-shadow 0.3s ease;
+}
+.city-card:hover{ 
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+.city-card h3{
+    color: #8b4513;
+    margin-bottom: 0.5rem;
+}
+.city-card p{
+    color: #444;
+}
+.city-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(218, 165, 32, 0.05);
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+.city-card:hover .city-overlay{
+    background: rgba(218, 165, 32, 0.15);
+}
+h1, h2, h3{
+    font-family: 'Noto Serif', serif;
+}
+p{
+    font-family:' Roboto', sans-serif;
+}
+.h1{
+    border:solid 2px #b35c44;
+    color: #fefaf3;
+   background-color: #b35c44; 
+}
+.subtitle{
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.5s ease;
+}
+.subtitle:hover{
+    color: #DAA520;
+
+}
+.loader{
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #c1442e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+@keyframes spin{
+    0%{ transform: rotate(0deg);}
+    100%{ transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
